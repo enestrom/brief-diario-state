@@ -1,3 +1,23 @@
 {
-  "entries": []
+  "entries": [
+    {
+      "date": "2026-05-11",
+      "argentina": [
+        "BCRA mantiene sesgo monetario contractivo en fase de remonetización",
+        "Mercado local cae mientras Wall Street marca récords"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Opus 4.7 ya disponible con mejor coding y visión",
+      "ia_startups": [
+        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue a IA",
+        "Abril suma USD 56bn con rounds de Anthropic y Project Prometheus",
+        "Bluefish levanta USD 43M Serie B para \"visibilidad en IA\"",
+        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue a IA",
+        "Abril suma USD 56bn con rounds de Anthropic y Project Prometheus",
+        "Bluefish levanta USD 43M Serie B para \"visibilidad en IA\""
+      ],
+      "radar_ticker": "NVDA",
+      "parapente": null
+    }
+  ]
 }
