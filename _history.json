@@ -37,6 +37,25 @@
       ],
       "radar_ticker": "AMD",
       "parapente": null
+    },
+    {
+      "date": "2026-05-11",
+      "argentina": [
+        "El riesgo país perfora los 500 puntos",
+        "BCRA mantiene sesgo contractivo en fase de remonetización"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "OpenAI lanza Daybreak, iniciativa de ciberseguridad",
+      "ia_startups": [
+        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue a IA",
+        "Abril suma USD 56bn con rounds de Anthropic y Project Prometheus",
+        "Sierra levanta USD 950M en +USD 15bn valuation",
+        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue a IA",
+        "Abril suma USD 56bn con rounds de Anthropic y Project Prometheus",
+        "Sierra levanta USD 950M en +USD 15bn valuation"
+      ],
+      "radar_ticker": "AVGO",
+      "parapente": null
     }
   ]
 }
