@@ -75,6 +75,25 @@
       ],
       "radar_ticker": "TSM",
       "parapente": null
+    },
+    {
+      "date": "2026-05-11",
+      "argentina": [
+        "El riesgo país perfora la barrera de los 500 puntos",
+        "BCRA mantiene sesgo contractivo en fase de remonetización"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Anthropic lanza Claude Security para escaneo de código",
+      "ia_startups": [
+        "Anthropic firma USD 1.5bn JV con Blackstone y Goldman",
+        "Abril 2026 marca tercer mes más fuerte de funding",
+        "Standard Intelligence levanta USD 75M Serie A",
+        "Anthropic firma USD 1.5bn JV con Blackstone y Goldman",
+        "Abril 2026 marca tercer mes más fuerte de funding",
+        "Standard Intelligence levanta USD 75M Serie A"
+      ],
+      "radar_ticker": "ASML",
+      "parapente": null
     }
   ]
 }
