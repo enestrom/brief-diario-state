@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brief Diario · {{DATE_SHORT}}</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f3ee;
+    color: #1a1a1a;
+    line-height: 1.5;
+  }
+  .container { max-width: 1400px; margin: 0 auto; }
+
+  /* HEADER */
+  .header {
+    background: #1a1a1a;
+    color: white;
+    padding: 20px 28px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .header-left h1 { margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.3px; }
+  .header-left .date { color: #b8b8b8; font-size: 13px; margin-top: 4px; }
+  .header-right { color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+
+  /* MERCADOS */
+  .mercados-strip {
+    background: linear-gradient(135deg, #2D3142 0%, #1a1d2e 100%);
+    color: white;
+    padding: 18px 24px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: auto repeat(5, 1fr);
+    gap: 20px;
+    align-items: center;
+  }
+  .mercados-label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px;
+    color: #9aa0b3; font-weight: 600;
+    display: flex; align-items: center; gap: 8px;
+    border-right: 1px solid #3a3e54; padding-right: 20px;
+  }
+  .mercado-item { text-align: center; }
+  .mercado-name { font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px; color: #9aa0b3; margin-bottom: 2px; }
+  .mercado-value { font-size: 17px; font-weight: 700; letter-spacing: -0.3px; }
+  .mercado-change { font-size: 11px; margin-top: 2px; font-weight: 600; }
+  .change-pos { color: #5BC97A; }
+  .change-neg { color: #FF7A7A; }
+  .change-flat { color: #9aa0b3; }
+
+  /* GRID */
+  .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+  .col-6 { grid-column: span 6; }
+  .col-4 { grid-column: span 4; }
+  .col-8 { grid-column: span 8; }
+  .col-12 { grid-column: span 12; }
+
+  /* CARD */
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px 22px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    border: 1px solid #ebe9e2;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-title {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px;
+    color: #888; margin-bottom: 14px; font-weight: 600;
+    padding-bottom: 10px; border-bottom: 1px solid #f0eee6;
+  }
+  .section-emoji { font-size: 16px; }
+  .section-name { flex: 1; }
+
+  .item { margin-bottom: 14px; }
+  .item:last-child { margin-bottom: 0; }
+  .item-head { font-weight: 600; font-size: 14px; margin-bottom: 4px; color: #1a1a1a; line-height: 1.35; }
+  .item-body { font-size: 13px; color: #333; }
+  .item-source { font-size: 11px; color: #999; margin-top: 4px; font-style: italic; }
+
+  /* WATCHLIST */
+  .stock-line {
+    display: flex; align-items: baseline; gap: 10px;
+    padding: 9px 0; border-bottom: 1px solid #f5f3eb; font-size: 13px;
+  }
+  .stock-line:last-of-type { border-bottom: none; }
+  .stock-ticker { font-weight: 700; min-width: 60px; }
+  .stock-pct-pos { color: #2D6A4F; font-weight: 600; min-width: 50px; }
+  .stock-pct-neg { color: #C73E1D; font-weight: 600; min-width: 50px; }
+  .stock-pct-flat { color: #888; font-weight: 600; min-width: 50px; }
+  .stock-note { color: #555; flex: 1; }
+  .quiet-line { font-size: 12px; color: #999; margin-top: 10px; font-style: italic; }
+  .empty-line { font-size: 13px; color: #888; font-style: italic; padding: 4px 0; }
+
+  /* RADAR */
+  .radar-card {
+    background: linear-gradient(180deg, #fffdf7 0%, #fff 100%);
+    border: 1px solid #e8dcc4;
+    border-left: 4px solid #E63946;
+  }
+  .radar-ticker-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 8px; flex-wrap: wrap; gap: 8px;
+  }
+  .radar-ticker { font-weight: 700; font-size: 18px; }
+  .radar-tag {
+    font-size: 11px; background: #f0e6d2; padding: 3px 10px;
+    border-radius: 12px; color: #5a4a2a; font-weight: 500;
+  }
+  .radar-meta {
+    font-size: 12px; color: #666; margin: 10px 0 12px;
+    padding: 8px 0; border-top: 1px dashed #e8dcc4; border-bottom: 1px dashed #e8dcc4;
+    display: flex; flex-wrap: wrap; gap: 14px;
+  }
+  .radar-body { font-size: 13px; color: #333; margin-bottom: 12px; }
+  .radar-block { font-size: 12px; padding: 10px 12px; border-radius: 6px; margin-top: 8px; }
+  .radar-portfolio { background: #eaf3ed; color: #1d4a32; }
+  .radar-watch { background: #fff8e7; color: #5a4a2a; }
+  .radar-block strong {
+    display: block; margin-bottom: 3px; font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.8px;
+  }
+
+  .footer { text-align: center; font-size: 11px; color: #999; margin-top: 20px; padding: 12px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 1024px) {
+    .col-6, .col-4, .col-8 { grid-column: span 6; }
+    .col-12 { grid-column: span 12; }
+  }
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .col-6, .col-4, .col-8, .col-12 { grid-column: span 12; }
+    .grid { gap: 12px; }
+    .header { padding: 16px 20px; flex-direction: column; align-items: flex-start; }
+    .header-left h1 { font-size: 20px; }
+    .mercados-strip { grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 14px 16px; }
+    .mercados-label {
+      grid-column: 1 / -1; border-right: none; border-bottom: 1px solid #3a3e54;
+      padding-right: 0; padding-bottom: 10px; justify-content: center;
+    }
+    .mercado-value { font-size: 14px; }
+    .card { padding: 16px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>📰 Brief diario</h1>
+      <div class="date">{{DATE_LONG}}</div>
+    </div>
+    <div class="header-right">~ {{READ_TIME}} min de lectura</div>
+  </div>
+
+  <!-- MERCADOS -->
+  <div class="mercados-strip">
+    <div class="mercados-label">📈 Mercados</div>
+    <div class="mercado-item">
+      <div class="mercado-name">S&P 500</div>
+      <div class="mercado-value">{{SPX_LEVEL}}</div>
+      <div class="mercado-change {{SPX_CLASS}}">{{SPX_CHANGE}}</div>
+    </div>
+    <div class="mercado-item">
+      <div class="mercado-name">BTC</div>
+      <div class="mercado-value">{{BTC_PRICE}}</div>
+      <div class="mercado-change {{BTC_CLASS}}">{{BTC_CHANGE}}</div>
+    </div>
+    <div class="mercado-item">
+      <div class="mercado-name">Merval USD</div>
+      <div class="mercado-value">{{MERVAL_LEVEL}}</div>
+      <div class="mercado-change {{MERVAL_CLASS}}">{{MERVAL_CHANGE}}</div>
+    </div>
+    <div class="mercado-item">
+      <div class="mercado-name">Riesgo país</div>
+      <div class="mercado-value">{{RIESGO_BPS}}</div>
+      <div class="mercado-change {{RIESGO_CLASS}}">{{RIESGO_CHANGE}}</div>
+    </div>
+    <div class="mercado-item">
+      <div class="mercado-name">MEP</div>
+      <div class="mercado-value">{{MEP_PRICE}}</div>
+      <div class="mercado-change {{MEP_CLASS}}">{{MEP_CHANGE}}</div>
+    </div>
+  </div>
+
+  <!-- GRID -->
+  <div class="grid">
+
+    {{ARGENTINA_BLOCK}}
+    <!--
+      Si hay 1-2 items, reemplazar {{ARGENTINA_BLOCK}} con:
+
+      <div class="card col-6">
+        <div class="section-title">
+          <span class="section-emoji">🇦🇷</span>
+          <span class="section-name">Argentina</span>
+        </div>
+        <div class="item">
+          <div class="item-head">Título del tema</div>
+          <div class="item-body">Contexto en 2-3 oraciones.</div>
+          <div class="item-source">Fuente</div>
+        </div>
+        [...más items...]
+      </div>
+
+      Si no hay items, reemplazar {{ARGENTINA_BLOCK}} con string vacío.
+    -->
+
+    {{WATCHLIST_BLOCK}}
+    <!--
+      Siempre presente. Reemplazar con:
+
+      <div class="card col-6">
+        <div class="section-title">
+          <span class="section-emoji">📊</span>
+          <span class="section-name">Watchlist core</span>
+        </div>
+        [Para cada ticker con noticia:]
+        <div class="stock-line">
+          <span class="stock-ticker">GOOGL</span>
+          <span class="stock-pct-pos">+2.4%</span>
+          <span class="stock-note">Noticia material en una oración.</span>
+        </div>
+        [Si todos sin noticias:]
+        <div class="empty-line">Sin novedades materiales hoy.</div>
+        [Si algunos sin noticias:]
+        <div class="quiet-line">MELI, AMZN, VGT: sin novedades materiales.</div>
+      </div>
+    -->
+
+    {{IA_PRACTICA_BLOCK}}
+    <!--
+      Si hay item:
+
+      <div class="card col-4">
+        <div class="section-title">
+          <span class="section-emoji">🛠️</span>
+          <span class="section-name">IA práctica</span>
+        </div>
+        <div class="item">
+          <div class="item-head">Título</div>
+          <div class="item-body">2-3 oraciones explicando qué es y cómo usarlo.</div>
+          <div class="item-source">Fuente</div>
+        </div>
+      </div>
+
+      Si no, string vacío.
+    -->
+
+    {{IA_STARTUPS_BLOCK}}
+    <!--
+      Siempre presente con 2-3 items:
+
+      <div class="card col-8">
+        <div class="section-title">
+          <span class="section-emoji">🤖</span>
+          <span class="section-name">IA · Startups y movidas</span>
+        </div>
+        [Para cada item:]
+        <div class="item">
+          <div class="item-head">Título</div>
+          <div class="item-body">2-3 oraciones. Por qué importa.</div>
+          <div class="item-source">Fuente</div>
+        </div>
+      </div>
+    -->
+
+    {{RADAR_BLOCK}}
+    <!--
+      Siempre presente:
+
+      <div class="card radar-card col-8">
+        <div class="section-title">
+          <span class="section-emoji">🎯</span>
+          <span class="section-name">Radar emergente · Ticker del día</span>
+        </div>
+        <div class="radar-ticker-row">
+          <div class="radar-ticker">{{TICKER}} · {{NAME}}</div>
+          <div class="radar-tag">{{TAG}}</div>
+        </div>
+        <div class="radar-meta">
+          <span><strong>Mkt cap:</strong> {{MCAP}}</span>
+          <span><strong>P/E fwd:</strong> {{PE}}</span>
+          <span><strong>YTD:</strong> {{YTD}}</span>
+        </div>
+        <div class="radar-body">{{BODY}}</div>
+        <div class="radar-block radar-portfolio">
+          <strong>Conexión con tu portfolio</strong>
+          {{PORTFOLIO}}
+        </div>
+        <div class="radar-block radar-watch">
+          <strong>Qué mirar</strong>
+          {{WATCH}}
+        </div>
+      </div>
+    -->
+
+    {{PARAPENTE_BLOCK}}
+    <!--
+      Si hay item:
+
+      <div class="card col-4">
+        <div class="section-title">
+          <span class="section-emoji">🪂</span>
+          <span class="section-name">Parapente</span>
+        </div>
+        <div class="item">
+          <div class="item-head">Título</div>
+          <div class="item-body">2-3 oraciones.</div>
+          <div class="item-source">Fuente</div>
+        </div>
+      </div>
+
+      Si no, string vacío.
+    -->
+
+  </div>
+
+  <div class="footer">
+    Brief generado el {{DATE_LONG}} · Respondé al bot con feedback para ajustar.
+  </div>
+
+</div>
+
+</body>
+</html>
