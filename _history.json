@@ -56,6 +56,25 @@
       ],
       "radar_ticker": "AVGO",
       "parapente": null
+    },
+    {
+      "date": "2026-05-11",
+      "argentina": [
+        "El riesgo país perfora los 500 puntos por primera vez en meses",
+        "BCRA mantiene sesgo contractivo en fase de remonetización"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Opus 4.7: ahora con mayor resolución de imagen y mejor en coding",
+      "ia_startups": [
+        "Sierra levanta USD 950M en más de USD 15bn valuation",
+        "Abril 2026 marca el tercer mes más alto de funding en un año",
+        "QuantWare levanta USD 178M Serie B para procesadores cuánticos",
+        "Sierra levanta USD 950M en más de USD 15bn valuation",
+        "Abril 2026 marca el tercer mes más alto de funding en un año",
+        "QuantWare levanta USD 178M Serie B para procesadores cuánticos"
+      ],
+      "radar_ticker": "TSM",
+      "parapente": null
     }
   ]
 }
