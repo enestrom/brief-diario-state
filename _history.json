@@ -94,6 +94,24 @@
       ],
       "radar_ticker": "ASML",
       "parapente": null
+    },
+    {
+      "date": "2026-05-12",
+      "argentina": [
+        "Bandas cambiarias: calma en el mercado con margen de 22.9%"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "GPT-5.5 Instant es el nuevo default de ChatGPT",
+      "ia_startups": [
+        "Sierra levanta USD 950M en más de USD 15bn valuation",
+        "Helsing cierra USD 1.2bn para drones autónomos de defensa",
+        "MatX levanta USD 500M Serie B para chips aceleradores IA",
+        "Sierra levanta USD 950M en más de USD 15bn valuation",
+        "Helsing cierra USD 1.2bn para drones autónomos de defensa",
+        "MatX levanta USD 500M Serie B para chips aceleradores IA"
+      ],
+      "radar_ticker": "AMAT",
+      "parapente": null
     }
   ]
 }
