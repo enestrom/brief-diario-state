@@ -112,6 +112,24 @@
       ],
       "radar_ticker": "AMAT",
       "parapente": null
+    },
+    {
+      "date": "2026-05-13",
+      "argentina": [
+        "Banda cambiaria otorga margen de 24.7% al BCRA"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Anthropic expande límites de uso tras acuerdo con SpaceX",
+      "ia_startups": [
+        "Abril 2026 marca USD 56bn en funding global",
+        "Isomorphic Labs levanta USD 2.1bn Serie B",
+        "Helsing recauda USD 1.2bn para drones autónomos de defensa",
+        "Abril 2026 marca USD 56bn en funding global",
+        "Isomorphic Labs levanta USD 2.1bn Serie B",
+        "Helsing recauda USD 1.2bn para drones autónomos de defensa"
+      ],
+      "radar_ticker": "KLAC",
+      "parapente": null
     }
   ]
 }
