@@ -3,25 +3,6 @@
     {
       "date": "2026-05-11",
       "argentina": [
-        "BCRA mantiene sesgo monetario contractivo en fase de remonetización",
-        "Mercado local cae mientras Wall Street marca récords"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Claude Opus 4.7 ya disponible con mejor coding y visión",
-      "ia_startups": [
-        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue a IA",
-        "Abril suma USD 56bn con rounds de Anthropic y Project Prometheus",
-        "Bluefish levanta USD 43M Serie B para \"visibilidad en IA\"",
-        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue a IA",
-        "Abril suma USD 56bn con rounds de Anthropic y Project Prometheus",
-        "Bluefish levanta USD 43M Serie B para \"visibilidad en IA\""
-      ],
-      "radar_ticker": "NVDA",
-      "parapente": null
-    },
-    {
-      "date": "2026-05-11",
-      "argentina": [
         "El riesgo país perfora los 500 puntos",
         "BCRA mantiene sesgo contractivo en fase de remonetización"
       ],
@@ -129,6 +110,25 @@
         "Helsing recauda USD 1.2bn para drones autónomos de defensa"
       ],
       "radar_ticker": "KLAC",
+      "parapente": null
+    },
+    {
+      "date": "2026-05-14",
+      "argentina": [
+        "BCRA mantiene brecha cambiaria en 22.9% dentro de las bandas",
+        "INDEC publica inflación de abril este miércoles"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Platform en AWS ya disponible",
+      "ia_startups": [
+        "Sierra levanta USD 950M a valuation de +USD 15bn",
+        "Abril 2026: USD 56bn en funding global, tercer mes más fuerte",
+        "Isomorphic Labs cierra USD 2.1bn Serie B",
+        "Sierra levanta USD 950M a valuation de +USD 15bn",
+        "Abril 2026: USD 56bn en funding global, tercer mes más fuerte",
+        "Isomorphic Labs cierra USD 2.1bn Serie B"
+      ],
+      "radar_ticker": "LRCX",
       "parapente": null
     }
   ]
