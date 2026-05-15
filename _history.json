@@ -7,25 +7,6 @@
         "BCRA mantiene sesgo contractivo en fase de remonetización"
       ],
       "watchlist_news": [],
-      "ia_practica": "Claude Code: multiagent orchestration y Outcomes",
-      "ia_startups": [
-        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue a IA",
-        "Abril suma USD 56bn con rounds de Anthropic y Project Prometheus",
-        "Sierra levanta USD 950M Serie (sin letra) en USD 15bn+ valuation",
-        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue a IA",
-        "Abril suma USD 56bn con rounds de Anthropic y Project Prometheus",
-        "Sierra levanta USD 950M Serie (sin letra) en USD 15bn+ valuation"
-      ],
-      "radar_ticker": "AMD",
-      "parapente": null
-    },
-    {
-      "date": "2026-05-11",
-      "argentina": [
-        "El riesgo país perfora los 500 puntos",
-        "BCRA mantiene sesgo contractivo en fase de remonetización"
-      ],
-      "watchlist_news": [],
       "ia_practica": "OpenAI lanza Daybreak, iniciativa de ciberseguridad",
       "ia_startups": [
         "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue a IA",
@@ -129,6 +110,25 @@
         "Isomorphic Labs cierra USD 2.1bn Serie B"
       ],
       "radar_ticker": "LRCX",
+      "parapente": null
+    },
+    {
+      "date": "2026-05-15",
+      "argentina": [
+        "BCRA suma USD 7,600 millones en compras este año",
+        "Riesgo país perforó el piso de 500 puntos básicos"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Platform en AWS ya disponible",
+      "ia_startups": [
+        "Abril 2026 marca el tercer mes más alto en funding global",
+        "Sierra levanta USD 950M en más de USD 15bn valuation",
+        "Isomorphic Labs cierra USD 2.1bn Serie B",
+        "Abril 2026 marca el tercer mes más alto en funding global",
+        "Sierra levanta USD 950M en más de USD 15bn valuation",
+        "Isomorphic Labs cierra USD 2.1bn Serie B"
+      ],
+      "radar_ticker": "MU",
       "parapente": null
     }
   ]
