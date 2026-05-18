@@ -3,25 +3,6 @@
     {
       "date": "2026-05-11",
       "argentina": [
-        "El riesgo país perfora los 500 puntos",
-        "BCRA mantiene sesgo contractivo en fase de remonetización"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "OpenAI lanza Daybreak, iniciativa de ciberseguridad",
-      "ia_startups": [
-        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue a IA",
-        "Abril suma USD 56bn con rounds de Anthropic y Project Prometheus",
-        "Sierra levanta USD 950M en +USD 15bn valuation",
-        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue a IA",
-        "Abril suma USD 56bn con rounds de Anthropic y Project Prometheus",
-        "Sierra levanta USD 950M en +USD 15bn valuation"
-      ],
-      "radar_ticker": "AVGO",
-      "parapente": null
-    },
-    {
-      "date": "2026-05-11",
-      "argentina": [
         "El riesgo país perfora los 500 puntos por primera vez en meses",
         "BCRA mantiene sesgo contractivo en fase de remonetización"
       ],
@@ -129,6 +110,24 @@
         "Isomorphic Labs cierra USD 2.1bn Serie B"
       ],
       "radar_ticker": "MU",
+      "parapente": null
+    },
+    {
+      "date": "2026-05-18",
+      "argentina": [
+        "BCRA supera USD 8,000M en compras del año"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude vs ChatGPT: la comparación definitiva de 2026",
+      "ia_startups": [
+        "Abril 2026 marca USD 56bn en funding global",
+        "Sierra levanta USD 950M en valuación de +USD 15bn",
+        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue IA",
+        "Abril 2026 marca USD 56bn en funding global",
+        "Sierra levanta USD 950M en valuación de +USD 15bn",
+        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue IA"
+      ],
+      "radar_ticker": "ARM",
       "parapente": null
     }
   ]
