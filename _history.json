@@ -3,25 +3,6 @@
     {
       "date": "2026-05-11",
       "argentina": [
-        "El riesgo país perfora los 500 puntos por primera vez en meses",
-        "BCRA mantiene sesgo contractivo en fase de remonetización"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Claude Opus 4.7: ahora con mayor resolución de imagen y mejor en coding",
-      "ia_startups": [
-        "Sierra levanta USD 950M en más de USD 15bn valuation",
-        "Abril 2026 marca el tercer mes más alto de funding en un año",
-        "QuantWare levanta USD 178M Serie B para procesadores cuánticos",
-        "Sierra levanta USD 950M en más de USD 15bn valuation",
-        "Abril 2026 marca el tercer mes más alto de funding en un año",
-        "QuantWare levanta USD 178M Serie B para procesadores cuánticos"
-      ],
-      "radar_ticker": "TSM",
-      "parapente": null
-    },
-    {
-      "date": "2026-05-11",
-      "argentina": [
         "El riesgo país perfora la barrera de los 500 puntos",
         "BCRA mantiene sesgo contractivo en fase de remonetización"
       ],
@@ -128,6 +109,24 @@
         "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue IA"
       ],
       "radar_ticker": "ARM",
+      "parapente": null
+    },
+    {
+      "date": "2026-05-19",
+      "argentina": [
+        "El riesgo país vuelve a 543 puntos básicos tras volatilidad"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude vs ChatGPT en mayo 2026: la comparación definitiva",
+      "ia_startups": [
+        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue IA",
+        "Abril 2026 marca USD 56bn en funding global",
+        "Crusoe levanta USD 1.38bn Serie E a valuación de USD 10bn",
+        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue IA",
+        "Abril 2026 marca USD 56bn en funding global",
+        "Crusoe levanta USD 1.38bn Serie E a valuación de USD 10bn"
+      ],
+      "radar_ticker": "MRVL",
       "parapente": null
     }
   ]
