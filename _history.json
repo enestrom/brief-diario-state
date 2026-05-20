@@ -1,25 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-11",
-      "argentina": [
-        "El riesgo país perfora la barrera de los 500 puntos",
-        "BCRA mantiene sesgo contractivo en fase de remonetización"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Anthropic lanza Claude Security para escaneo de código",
-      "ia_startups": [
-        "Anthropic firma USD 1.5bn JV con Blackstone y Goldman",
-        "Abril 2026 marca tercer mes más fuerte de funding",
-        "Standard Intelligence levanta USD 75M Serie A",
-        "Anthropic firma USD 1.5bn JV con Blackstone y Goldman",
-        "Abril 2026 marca tercer mes más fuerte de funding",
-        "Standard Intelligence levanta USD 75M Serie A"
-      ],
-      "radar_ticker": "ASML",
-      "parapente": null
-    },
-    {
       "date": "2026-05-12",
       "argentina": [
         "Bandas cambiarias: calma en el mercado con margen de 22.9%"
@@ -127,6 +108,24 @@
         "Crusoe levanta USD 1.38bn Serie E a valuación de USD 10bn"
       ],
       "radar_ticker": "MRVL",
+      "parapente": null
+    },
+    {
+      "date": "2026-05-20",
+      "argentina": [
+        "Riesgo país vuelve a 548 puntos en sexta suba consecutiva"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Dreaming: memoria persistente entre sesiones",
+      "ia_startups": [
+        "Abril 2026: USD 56bn en funding global",
+        "Sierra levanta USD 950M en valuation de +USD 15bn",
+        "Q1 2026 rompe récords: USD 300bn invertidos",
+        "Abril 2026: USD 56bn en funding global",
+        "Sierra levanta USD 950M en valuation de +USD 15bn",
+        "Q1 2026 rompe récords: USD 300bn invertidos"
+      ],
+      "radar_ticker": "ALAB",
       "parapente": null
     }
   ]
