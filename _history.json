@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-12",
-      "argentina": [
-        "Bandas cambiarias: calma en el mercado con margen de 22.9%"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "GPT-5.5 Instant es el nuevo default de ChatGPT",
-      "ia_startups": [
-        "Sierra levanta USD 950M en más de USD 15bn valuation",
-        "Helsing cierra USD 1.2bn para drones autónomos de defensa",
-        "MatX levanta USD 500M Serie B para chips aceleradores IA",
-        "Sierra levanta USD 950M en más de USD 15bn valuation",
-        "Helsing cierra USD 1.2bn para drones autónomos de defensa",
-        "MatX levanta USD 500M Serie B para chips aceleradores IA"
-      ],
-      "radar_ticker": "AMAT",
-      "parapente": null
-    },
-    {
       "date": "2026-05-13",
       "argentina": [
         "Banda cambiaria otorga margen de 24.7% al BCRA"
@@ -127,6 +109,24 @@
       ],
       "radar_ticker": "ALAB",
       "parapente": null
+    },
+    {
+      "date": "2026-05-21",
+      "argentina": [
+        "La banda cambiaria sigue otorgando margen al BCRA"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Long-context tool-calling: Tool-DC framework",
+      "ia_startups": [
+        "Unframe levanta USD 50M Serie B tras superar USD 100M en contratos",
+        "Crusoe cierra USD 1.38bn Serie E a valuación de USD 10bn",
+        "Q1 2026 bate récords: USD 300bn invertidos, 80% fue IA",
+        "Unframe levanta USD 50M Serie B tras superar USD 100M en contratos",
+        "Crusoe cierra USD 1.38bn Serie E a valuación de USD 10bn",
+        "Q1 2026 bate récords: USD 300bn invertidos, 80% fue IA"
+      ],
+      "radar_ticker": "VRT",
+      "parapente": "Ozone Vibe GT: el nuevo mid-B para XC"
     }
   ]
 }
