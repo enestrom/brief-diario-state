@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-13",
-      "argentina": [
-        "Banda cambiaria otorga margen de 24.7% al BCRA"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Anthropic expande límites de uso tras acuerdo con SpaceX",
-      "ia_startups": [
-        "Abril 2026 marca USD 56bn en funding global",
-        "Isomorphic Labs levanta USD 2.1bn Serie B",
-        "Helsing recauda USD 1.2bn para drones autónomos de defensa",
-        "Abril 2026 marca USD 56bn en funding global",
-        "Isomorphic Labs levanta USD 2.1bn Serie B",
-        "Helsing recauda USD 1.2bn para drones autónomos de defensa"
-      ],
-      "radar_ticker": "KLAC",
-      "parapente": null
-    },
-    {
       "date": "2026-05-14",
       "argentina": [
         "BCRA mantiene brecha cambiaria en 22.9% dentro de las bandas",
@@ -126,6 +108,24 @@
         "Q1 2026 bate récords: USD 300bn invertidos, 80% fue IA"
       ],
       "radar_ticker": "VRT",
+      "parapente": "Ozone Vibe GT: el nuevo mid-B para XC"
+    },
+    {
+      "date": "2026-05-22",
+      "argentina": [
+        "BCRA suma USD 145M y las reservas tocan máximo en tres meses"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Managed Agents: Dreaming, Outcomes y multiagente",
+      "ia_startups": [
+        "Dust levanta USD 65M Serie B para agentes de workplace",
+        "Q1 2026 rompe récords: USD 300B invertidos, 80% fue IA",
+        "Abril 2026: USD 56B en funding, impulsado por mega-rounds",
+        "Dust levanta USD 65M Serie B para agentes de workplace",
+        "Q1 2026 rompe récords: USD 300B invertidos, 80% fue IA",
+        "Abril 2026: USD 56B en funding, impulsado por mega-rounds"
+      ],
+      "radar_ticker": "ETN",
       "parapente": "Ozone Vibe GT: el nuevo mid-B para XC"
     }
   ]
