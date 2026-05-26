@@ -1,25 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-15",
-      "argentina": [
-        "BCRA suma USD 7,600 millones en compras este año",
-        "Riesgo país perforó el piso de 500 puntos básicos"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Claude Platform en AWS ya disponible",
-      "ia_startups": [
-        "Abril 2026 marca el tercer mes más alto en funding global",
-        "Sierra levanta USD 950M en más de USD 15bn valuation",
-        "Isomorphic Labs cierra USD 2.1bn Serie B",
-        "Abril 2026 marca el tercer mes más alto en funding global",
-        "Sierra levanta USD 950M en más de USD 15bn valuation",
-        "Isomorphic Labs cierra USD 2.1bn Serie B"
-      ],
-      "radar_ticker": "MU",
-      "parapente": null
-    },
-    {
       "date": "2026-05-18",
       "argentina": [
         "BCRA supera USD 8,000M en compras del año"
@@ -126,6 +107,24 @@
       ],
       "radar_ticker": "GEV",
       "parapente": "Ozone lanza el Vibe GT, nueva mid-B para XC"
+    },
+    {
+      "date": "2026-05-26",
+      "argentina": [
+        "El BCRA suma casi USD 9.000M en compras este año"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Dreaming: memoria que mejora entre sesiones",
+      "ia_startups": [
+        "Q1 2026 rompe récords: USD 300B invertidos, 80% fue IA",
+        "Legora levanta USD 550M Serie D a valuación de USD 5.55B",
+        "Shield AI cierra USD 1.5B Serie G a valuación de USD 12.7B",
+        "Q1 2026 rompe récords: USD 300B invertidos, 80% fue IA",
+        "Legora levanta USD 550M Serie D a valuación de USD 5.55B",
+        "Shield AI cierra USD 1.5B Serie G a valuación de USD 12.7B"
+      ],
+      "radar_ticker": "CEG",
+      "parapente": null
     }
   ]
 }
