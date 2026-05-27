@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-18",
-      "argentina": [
-        "BCRA supera USD 8,000M en compras del año"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Claude vs ChatGPT: la comparación definitiva de 2026",
-      "ia_startups": [
-        "Abril 2026 marca USD 56bn en funding global",
-        "Sierra levanta USD 950M en valuación de +USD 15bn",
-        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue IA",
-        "Abril 2026 marca USD 56bn en funding global",
-        "Sierra levanta USD 950M en valuación de +USD 15bn",
-        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue IA"
-      ],
-      "radar_ticker": "ARM",
-      "parapente": null
-    },
-    {
       "date": "2026-05-19",
       "argentina": [
         "El riesgo país vuelve a 543 puntos básicos tras volatilidad"
@@ -125,6 +107,22 @@
       ],
       "radar_ticker": "CEG",
       "parapente": null
+    },
+    {
+      "date": "2026-05-27",
+      "argentina": [
+        "BCRA desarma cobertura electoral de USD 4.000M"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "GPT-5.5 Instant: menos alucinaciones",
+      "ia_startups": [
+        "OpenAI lleva ChatGPT a Excel y Sheets",
+        "Codex mobile en preview",
+        "OpenAI lleva ChatGPT a Excel y Sheets",
+        "Codex mobile en preview"
+      ],
+      "radar_ticker": "VST",
+      "parapente": "Ozone Vibe GT: el nuevo mid-B"
     }
   ]
 }
