@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-19",
-      "argentina": [
-        "El riesgo país vuelve a 543 puntos básicos tras volatilidad"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Claude vs ChatGPT en mayo 2026: la comparación definitiva",
-      "ia_startups": [
-        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue IA",
-        "Abril 2026 marca USD 56bn en funding global",
-        "Crusoe levanta USD 1.38bn Serie E a valuación de USD 10bn",
-        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue IA",
-        "Abril 2026 marca USD 56bn en funding global",
-        "Crusoe levanta USD 1.38bn Serie E a valuación de USD 10bn"
-      ],
-      "radar_ticker": "MRVL",
-      "parapente": null
-    },
-    {
       "date": "2026-05-20",
       "argentina": [
         "Riesgo país vuelve a 548 puntos en sexta suba consecutiva"
@@ -123,6 +105,24 @@
       ],
       "radar_ticker": "VST",
       "parapente": "Ozone Vibe GT: el nuevo mid-B"
+    },
+    {
+      "date": "2026-05-28",
+      "argentina": [
+        "BCRA sigue comprando pero modera el ritmo"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Dreaming: memoria persistente entre sesiones",
+      "ia_startups": [
+        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue IA",
+        "Shield AI levanta USD 1,5bn Serie G a valuación de USD 12,7bn",
+        "Runware recauda USD 50M Serie A para su motor de inferencia Sonic",
+        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue IA",
+        "Shield AI levanta USD 1,5bn Serie G a valuación de USD 12,7bn",
+        "Runware recauda USD 50M Serie A para su motor de inferencia Sonic"
+      ],
+      "radar_ticker": "TLN",
+      "parapente": null
     }
   ]
 }
