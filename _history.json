@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-20",
-      "argentina": [
-        "Riesgo país vuelve a 548 puntos en sexta suba consecutiva"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Claude Dreaming: memoria persistente entre sesiones",
-      "ia_startups": [
-        "Abril 2026: USD 56bn en funding global",
-        "Sierra levanta USD 950M en valuation de +USD 15bn",
-        "Q1 2026 rompe récords: USD 300bn invertidos",
-        "Abril 2026: USD 56bn en funding global",
-        "Sierra levanta USD 950M en valuation de +USD 15bn",
-        "Q1 2026 rompe récords: USD 300bn invertidos"
-      ],
-      "radar_ticker": "ALAB",
-      "parapente": null
-    },
-    {
       "date": "2026-05-21",
       "argentina": [
         "La banda cambiaria sigue otorgando margen al BCRA"
@@ -123,6 +105,24 @@
       ],
       "radar_ticker": "TLN",
       "parapente": null
+    },
+    {
+      "date": "2026-05-29",
+      "argentina": [
+        "BCRA aceleró compras y alcanzó casi USD 10.000M en el año"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Opus 4.8: Fast Mode 2.5x más rápido y 3x más barato",
+      "ia_startups": [
+        "OpenRouter levanta USD 113M Serie B a valuation de USD 1.3B",
+        "Catena Labs cierra USD 30M Serie A para finanzas agénticas",
+        "Q1 2026 rompe récords: USD 300B invertidos, 80% fue IA",
+        "OpenRouter levanta USD 113M Serie B a valuation de USD 1.3B",
+        "Catena Labs cierra USD 30M Serie A para finanzas agénticas",
+        "Q1 2026 rompe récords: USD 300B invertidos, 80% fue IA"
+      ],
+      "radar_ticker": "EQIX",
+      "parapente": "Ozone Vibe GT: nuevo mid-B para XC cotidiano"
     }
   ]
 }
