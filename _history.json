@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-21",
-      "argentina": [
-        "La banda cambiaria sigue otorgando margen al BCRA"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Long-context tool-calling: Tool-DC framework",
-      "ia_startups": [
-        "Unframe levanta USD 50M Serie B tras superar USD 100M en contratos",
-        "Crusoe cierra USD 1.38bn Serie E a valuación de USD 10bn",
-        "Q1 2026 bate récords: USD 300bn invertidos, 80% fue IA",
-        "Unframe levanta USD 50M Serie B tras superar USD 100M en contratos",
-        "Crusoe cierra USD 1.38bn Serie E a valuación de USD 10bn",
-        "Q1 2026 bate récords: USD 300bn invertidos, 80% fue IA"
-      ],
-      "radar_ticker": "VRT",
-      "parapente": "Ozone Vibe GT: el nuevo mid-B para XC"
-    },
-    {
       "date": "2026-05-22",
       "argentina": [
         "BCRA suma USD 145M y las reservas tocan máximo en tres meses"
@@ -123,6 +105,22 @@
       ],
       "radar_ticker": "EQIX",
       "parapente": "Ozone Vibe GT: nuevo mid-B para XC cotidiano"
+    },
+    {
+      "date": "2026-06-01",
+      "argentina": [
+        "BCRA mantiene racha compradora con USD 7.375M acumulados en 2026"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Anthropic añade controles de \"esfuerzo\" a Claude",
+      "ia_startups": [
+        "Q1 2026 bate todos los récords: USD 300B invertidos, 80% fue IA",
+        "Amazon invierte USD 5B adicionales en Anthropic con opción a USD 20B más",
+        "Q1 2026 bate todos los récords: USD 300B invertidos, 80% fue IA",
+        "Amazon invierte USD 5B adicionales en Anthropic con opción a USD 20B más"
+      ],
+      "radar_ticker": "DLR",
+      "parapente": "Ozone lanza el Vibe GT, nueva mid-B para XC cotidiano"
     }
   ]
 }
