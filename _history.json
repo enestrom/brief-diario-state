@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-22",
-      "argentina": [
-        "BCRA suma USD 145M y las reservas tocan máximo en tres meses"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Claude Managed Agents: Dreaming, Outcomes y multiagente",
-      "ia_startups": [
-        "Dust levanta USD 65M Serie B para agentes de workplace",
-        "Q1 2026 rompe récords: USD 300B invertidos, 80% fue IA",
-        "Abril 2026: USD 56B en funding, impulsado por mega-rounds",
-        "Dust levanta USD 65M Serie B para agentes de workplace",
-        "Q1 2026 rompe récords: USD 300B invertidos, 80% fue IA",
-        "Abril 2026: USD 56B en funding, impulsado por mega-rounds"
-      ],
-      "radar_ticker": "ETN",
-      "parapente": "Ozone Vibe GT: el nuevo mid-B para XC"
-    },
-    {
       "date": "2026-05-25",
       "argentina": [
         "BCRA compra USD 145M y reservas tocan máximo en tres meses"
@@ -121,6 +103,22 @@
       ],
       "radar_ticker": "DLR",
       "parapente": "Ozone lanza el Vibe GT, nueva mid-B para XC cotidiano"
+    },
+    {
+      "date": "2026-06-02",
+      "argentina": [
+        "FMI flexibiliza metas de reservas en USD 11.800M"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Opus 4.8 añade controles de \"esfuerzo\"",
+      "ia_startups": [
+        "Anthropic lanza Opus 4.8, supera a GPT-5.5",
+        "Q1 2026 bate récords: USD 300B invertidos, 80% fue IA",
+        "Anthropic lanza Opus 4.8, supera a GPT-5.5",
+        "Q1 2026 bate récords: USD 300B invertidos, 80% fue IA"
+      ],
+      "radar_ticker": "ANET",
+      "parapente": null
     }
   ]
 }
