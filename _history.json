@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-25",
-      "argentina": [
-        "BCRA compra USD 145M y reservas tocan máximo en tres meses"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Claude Managed Agents: auto-hosted sandboxes y MCP tunnels",
-      "ia_startups": [
-        "Legora levanta USD 550M Serie D a valuación de USD 5,55B",
-        "Shield AI consigue USD 1,5B Serie G a valuación de USD 12,7B",
-        "Q1 2026 rompe récords: USD 300B en VC global, 80% fue IA",
-        "Legora levanta USD 550M Serie D a valuación de USD 5,55B",
-        "Shield AI consigue USD 1,5B Serie G a valuación de USD 12,7B",
-        "Q1 2026 rompe récords: USD 300B en VC global, 80% fue IA"
-      ],
-      "radar_ticker": "GEV",
-      "parapente": "Ozone lanza el Vibe GT, nueva mid-B para XC"
-    },
-    {
       "date": "2026-05-26",
       "argentina": [
         "El BCRA suma casi USD 9.000M en compras este año"
@@ -119,6 +101,23 @@
       ],
       "radar_ticker": "ANET",
       "parapente": null
+    },
+    {
+      "date": "2026-06-03",
+      "argentina": [
+        "BCRA desarma posiciones de dólar futuro para resetear poder de fuego",
+        "FMI flexibiliza meta de reservas: de +USD 3.200M a -USD 8.600M"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Opus 4.8 añade \"effort controls\" en cuatro niveles",
+      "ia_startups": [
+        "Anthropic presenta IPO confidencial a la SEC, adelantándose a OpenAI",
+        "Anthropic lanza Opus 4.8 con Dynamic Workflows para orquestar cientos de subagentes",
+        "Anthropic presenta IPO confidencial a la SEC, adelantándose a OpenAI",
+        "Anthropic lanza Opus 4.8 con Dynamic Workflows para orquestar cientos de subagentes"
+      ],
+      "radar_ticker": "PWR",
+      "parapente": "Ozone Vibe GT: el nuevo mid-B para XC cotidiano"
     }
   ]
 }
