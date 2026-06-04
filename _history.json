@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-26",
-      "argentina": [
-        "El BCRA suma casi USD 9.000M en compras este año"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Claude Dreaming: memoria que mejora entre sesiones",
-      "ia_startups": [
-        "Q1 2026 rompe récords: USD 300B invertidos, 80% fue IA",
-        "Legora levanta USD 550M Serie D a valuación de USD 5.55B",
-        "Shield AI cierra USD 1.5B Serie G a valuación de USD 12.7B",
-        "Q1 2026 rompe récords: USD 300B invertidos, 80% fue IA",
-        "Legora levanta USD 550M Serie D a valuación de USD 5.55B",
-        "Shield AI cierra USD 1.5B Serie G a valuación de USD 12.7B"
-      ],
-      "radar_ticker": "CEG",
-      "parapente": null
-    },
-    {
       "date": "2026-05-27",
       "argentina": [
         "BCRA desarma cobertura electoral de USD 4.000M"
@@ -118,6 +100,22 @@
       ],
       "radar_ticker": "PWR",
       "parapente": "Ozone Vibe GT: el nuevo mid-B para XC cotidiano"
+    },
+    {
+      "date": "2026-06-04",
+      "argentina": [
+        "BCRA cumplió meta anual en cinco meses"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Opus 4.8: effort controls en cuatro niveles",
+      "ia_startups": [
+        "OpenRouter levanta $113M Serie B a $1.3B",
+        "Orbital Industries $50M Serie B para materiales de IA",
+        "OpenRouter levanta $113M Serie B a $1.3B",
+        "Orbital Industries $50M Serie B para materiales de IA"
+      ],
+      "radar_ticker": "MSFT",
+      "parapente": null
     }
   ]
 }
