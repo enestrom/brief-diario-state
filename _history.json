@@ -1,22 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-27",
-      "argentina": [
-        "BCRA desarma cobertura electoral de USD 4.000M"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "GPT-5.5 Instant: menos alucinaciones",
-      "ia_startups": [
-        "OpenAI lleva ChatGPT a Excel y Sheets",
-        "Codex mobile en preview",
-        "OpenAI lleva ChatGPT a Excel y Sheets",
-        "Codex mobile en preview"
-      ],
-      "radar_ticker": "VST",
-      "parapente": "Ozone Vibe GT: el nuevo mid-B"
-    },
-    {
       "date": "2026-05-28",
       "argentina": [
         "BCRA sigue comprando pero modera el ritmo"
@@ -116,6 +100,24 @@
       ],
       "radar_ticker": "MSFT",
       "parapente": null
+    },
+    {
+      "date": "2026-06-05",
+      "argentina": [
+        "BCRA superó meta anual en cinco meses con USD 10.148M"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "GPT-5.5 Instant mejora respuestas",
+      "ia_startups": [
+        "OpenRouter levanta USD 113M Serie B a valuación de USD 1.3B",
+        "Anthropic cerró Serie H de USD 65B a valuación de USD 965B",
+        "Q1 2026 bate récords con USD 300B en venture",
+        "OpenRouter levanta USD 113M Serie B a valuación de USD 1.3B",
+        "Anthropic cerró Serie H de USD 65B a valuación de USD 965B",
+        "Q1 2026 bate récords con USD 300B en venture"
+      ],
+      "radar_ticker": "PLTR",
+      "parapente": "Ozone lanza el Vibe GT para mid-B"
     }
   ]
 }
