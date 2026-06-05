@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-28",
-      "argentina": [
-        "BCRA sigue comprando pero modera el ritmo"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Claude Dreaming: memoria persistente entre sesiones",
-      "ia_startups": [
-        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue IA",
-        "Shield AI levanta USD 1,5bn Serie G a valuación de USD 12,7bn",
-        "Runware recauda USD 50M Serie A para su motor de inferencia Sonic",
-        "Q1 2026 rompe récords: USD 300bn invertidos, 80% fue IA",
-        "Shield AI levanta USD 1,5bn Serie G a valuación de USD 12,7bn",
-        "Runware recauda USD 50M Serie A para su motor de inferencia Sonic"
-      ],
-      "radar_ticker": "TLN",
-      "parapente": null
-    },
-    {
       "date": "2026-05-29",
       "argentina": [
         "BCRA aceleró compras y alcanzó casi USD 10.000M en el año"
@@ -118,6 +100,22 @@
       ],
       "radar_ticker": "PLTR",
       "parapente": "Ozone lanza el Vibe GT para mid-B"
+    },
+    {
+      "date": "2026-06-05",
+      "argentina": [
+        "BCRA superó meta anual en cinco meses"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Opus 4.8 con dynamic workflows y effort controls",
+      "ia_startups": [
+        "Anthropic cerró Serie H récord de USD 65B a valuación de USD 965B",
+        "Q1 2026 batió récords con USD 300B en VC global",
+        "Anthropic cerró Serie H récord de USD 65B a valuación de USD 965B",
+        "Q1 2026 batió récords con USD 300B en VC global"
+      ],
+      "radar_ticker": "APP",
+      "parapente": null
     }
   ]
 }
