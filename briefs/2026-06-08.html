@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brief Diario · 8 jun 2026</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f3ee;
+    color: #1a1a1a;
+    line-height: 1.5;
+  }
+  .container { max-width: 1400px; margin: 0 auto; }
+
+  /* HEADER */
+  .header {
+    background: #1a1a1a;
+    color: white;
+    padding: 20px 28px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .header-left h1 { margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.3px; }
+  .header-left .date { color: #b8b8b8; font-size: 13px; margin-top: 4px; }
+  .header-right { color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+
+  /* MERCADOS */
+  .mercados-strip {
+    background: linear-gradient(135deg, #2D3142 0%, #1a1d2e 100%);
+    color: white;
+    padding: 18px 24px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: auto repeat(5, 1fr);
+    gap: 20px;
+    align-items: center;
+  }
+  .mercados-label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px;
+    color: #9aa0b3; font-weight: 600;
+    display: flex; align-items: center; gap: 8px;
+    border-right: 1px solid #3a3e54; padding-right: 20px;
+  }
+  .mercado-item { text-align: center; }
+  .mercado-name { font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px; color: #9aa0b3; margin-bottom: 2px; }
+  .mercado-value { font-size: 17px; font-weight: 700; letter-spacing: -0.3px; }
+  .mercado-change { font-size: 11px; margin-top: 2px; font-weight: 600; }
+  .change-pos { color: #5BC97A; }
+  .change-neg { color: #FF7A7A; }
+  .change-flat { color: #9aa0b3; }
+
+  /* GRID */
+  .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+  .col-6 { grid-column: span 6; }
+  .col-4 { grid-column: span 4; }
+  .col-8 { grid-column: span 8; }
+  .col-12 { grid-column: span 12; }
+
+  /* CARD */
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px 22px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    border: 1px solid #ebe9e2;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-title {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px;
+    color: #888; margin-bottom: 14px; font-weight: 600;
+    padding-bottom: 10px; border-bottom: 1px solid #f0eee6;
+  }
+  .section-emoji { font-size: 16px; }
+  .section-name { flex: 1; }
+
+  .item { margin-bottom: 14px; }
+  .item:last-child { margin-bottom: 0; }
+  .item-head { font-weight: 600; font-size: 14px; margin-bottom: 4px; color: #1a1a1a; line-height: 1.35; }
+  .item-body { font-size: 13px; color: #333; }
+  .item-source { font-size: 11px; color: #999; margin-top: 4px; font-style: italic; }
+
+  /* WATCHLIST */
+  .stock-line {
+    display: flex; align-items: baseline; gap: 10px;
+    padding: 9px 0; border-bottom: 1px solid #f5f3eb; font-size: 13px;
+  }
+  .stock-line:last-of-type { border-bottom: none; }
+  .stock-ticker { font-weight: 700; min-width: 60px; }
+  .stock-pct-pos { color: #2D6A4F; font-weight: 600; min-width: 50px; }
+  .stock-pct-neg { color: #C73E1D; font-weight: 600; min-width: 50px; }
+  .stock-pct-flat { color: #888; font-weight: 600; min-width: 50px; }
+  .stock-note { color: #555; flex: 1; }
+  .quiet-line { font-size: 12px; color: #999; margin-top: 10px; font-style: italic; }
+  .empty-line { font-size: 13px; color: #888; font-style: italic; padding: 4px 0; }
+
+  /* RADAR */
+  .radar-card {
+    background: linear-gradient(180deg, #fffdf7 0%, #fff 100%);
+    border: 1px solid #e8dcc4;
+    border-left: 4px solid #E63946;
+  }
+  .radar-ticker-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 8px; flex-wrap: wrap; gap: 8px;
+  }
+  .radar-ticker { font-weight: 700; font-size: 18px; }
+  .radar-tag {
+    font-size: 11px; background: #f0e6d2; padding: 3px 10px;
+    border-radius: 12px; color: #5a4a2a; font-weight: 500;
+  }
+  .radar-meta {
+    font-size: 12px; color: #666; margin: 10px 0 12px;
+    padding: 8px 0; border-top: 1px dashed #e8dcc4; border-bottom: 1px dashed #e8dcc4;
+    display: flex; flex-wrap: wrap; gap: 14px;
+  }
+  .radar-body { font-size: 13px; color: #333; margin-bottom: 12px; }
+  .radar-block { font-size: 12px; padding: 10px 12px; border-radius: 6px; margin-top: 8px; }
+  .radar-portfolio { background: #eaf3ed; color: #1d4a32; }
+  .radar-watch { background: #fff8e7; color: #5a4a2a; }
+  .radar-block strong {
+    display: block; margin-bottom: 3px; font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.8px;
+  }
+
+  .footer { text-align: center; font-size: 11px; color: #999; margin-top: 20px; padding: 12px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 1024px) {
+    .col-6, .col-4, .col-8 { grid-column: span 6; }
+    .col-12 { grid-column: span 12; }
+  }
+  @media (max-width: 640px) {
+    body { padding: 12px; }
+    .col-6, .col-4, .col-8, .col-12 { grid-column: span 12; }
+    .grid { gap: 12px; }
+    .header { padding: 16px 20px; flex-direction: column; align-items: flex-start; }
+    .header-left h1 { font-size: 20px; }
+    .mercados-strip { grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 14px 16px; }
+    .mercados-label {
+      grid-column: 1 / -1; border-right: none; border-bottom: 1px solid #3a3e54;
+      padding-right: 0; padding-bottom: 10px; justify-content: center;
+    }
+    .mercado-value { font-size: 14px; }
+    .card { padding: 16px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>📰 Brief diario</h1>
+      <div class="date">lunes, 8 de junio de 2026</div>
+    </div>
+    <div class="header-right">~ 6 min de lectura</div>
+  </div>
+
+  <!-- MERCADOS -->
+  <div class="mercados-strip">
+    <div class="mercados-label">📈 Mercados</div>
+    <div class="mercado-item">
+      <div class="mercado-name">S&P 500</div>
+      <div class="mercado-value">7383</div>
+      <div class="mercado-change change-neg">-2.6%</div>
+    </div>
+    <div class="mercado-item">
+      <div class="mercado-name">BTC</div>
+      <div class="mercado-value">60k</div>
+      <div class="mercado-change change-neg">-5.0%</div>
+    </div>
+    <div class="mercado-item">
+      <div class="mercado-name">Merval USD</div>
+      <div class="mercado-value">2440</div>
+      <div class="mercado-change change-pos">+0.6%</div>
+    </div>
+    <div class="mercado-item">
+      <div class="mercado-name">Riesgo país</div>
+      <div class="mercado-value">499bps</div>
+      <div class="mercado-change change-flat">—</div>
+    </div>
+    <div class="mercado-item">
+      <div class="mercado-name">MEP</div>
+      <div class="mercado-value">1457</div>
+      <div class="mercado-change change-neg">-0.3%</div>
+    </div>
+  </div>
+
+  <!-- GRID -->
+  <div class="grid">
+
+    <div class="card col-6">
+      <div class="section-title">
+        <span class="section-emoji">🇦🇷</span>
+        <span class="section-name">Argentina</span>
+      </div>
+      <div class="item">
+        <div class="item-head">BCRA superó meta anual en cinco meses</div>
+        <div class="item-body">El Banco Central acumuló USD 10.148 millones en compras en 2026, superando la meta de USD 10.000 millones ya en junio. El FMI flexibilizó objetivos en USD 11.800 millones, llevando la meta de junio de +USD 3.200M a -USD 8.600M negativos. La acumulación se da en marco de la Fase 4 con banda cambiaria ajustada por inflación desde enero.</div>
+        <div class="item-source">Ámbito, Infobae</div>
+      </div>
+    </div>
+
+    <div class="card col-6">
+      <div class="section-title">
+        <span class="section-emoji">📊</span>
+        <span class="section-name">Watchlist core</span>
+      </div>
+      <div class="stock-line">
+        <span class="stock-ticker">GOOGL</span>
+        <span class="stock-pct-flat">—</span>
+        <span class="stock-note">Deal con SpaceX: USD 920M/mes por capacidad de cómputo en xAI data centers.</span>
+      </div>
+      <div class="quiet-line">MELI, AMZN, VGT, BTC, SPY, CSPX: sin novedades materiales.</div>
+    </div>
+
+    <div class="card col-4">
+      <div class="section-title">
+        <span class="section-emoji">🛠️</span>
+        <span class="section-name">IA práctica</span>
+      </div>
+      <div class="item">
+        <div class="item-head">Claude Opus 4.8 añade Dynamic Workflows</div>
+        <div class="item-body">Anthropic lanzó workflows dinámicos que permiten a Claude orquestar múltiples subagentes en paralelo para tareas grandes. Útil para auditorías de código, migraciones masivas o research que requiere validación cruzada. Se activa con /workflows o modo ultracode. Disponible en planes Max/Team, off por default en Enterprise.</div>
+        <div class="item-source">Anthropic, Releasebot</div>
+      </div>
+    </div>
+
+    <div class="card col-8">
+      <div class="section-title">
+        <span class="section-emoji">🤖</span>
+        <span class="section-name">IA · Startups y movidas</span>
+      </div>
+      <div class="item">
+        <div class="item-head">Q1 2026 rompe todos los récords: USD 300B globales</div>
+        <div class="item-body">El primer trimestre fue el mayor en historia del VC con USD 300B invertidos (41% YoY). El 80% fue a IA. Cuatro de los cinco mayores rounds de la historia cerraron en Q1: OpenAI USD 122B, Anthropic USD 30B, xAI USD 20B, Waymo USD 16B. Estos cuatro rounds concentraron 65% del capital global del trimestre.</div>
+        <div class="item-source">Crunchbase, KPMG</div>
+      </div>
+      <div class="item">
+        <div class="item-head">Anthropic cerró Serie H récord de USD 65B a valuación de USD 965B</div>
+        <div class="item-body">La ronda de fines de mayo convirtió a Anthropic en la startup de IA más valiosa, superando los USD 852B de OpenAI. Revenue run-rate cruzó USD 47B (vs. USD 14B en febrero). Proyecta primer trimestre con ganancia operativa en Q2 2026. Claude Code impulsa crecimiento con USD 50k/año por ingeniero productivo.</div>
+        <div class="item-source">AI Funding Tracker, TechCrunch</div>
+      </div>
+      <div class="item">
+        <div class="item-head">Generalist AI levanta USD 400M, Suno USD 400M Serie D</div>
+        <div class="item-body">Primera semana de junio muestra rounds grandes en aplicación vertical. Generalist AI (Radical Ventures) y Suno (BOND) cerraron USD 400M c/u. También: Collate USD 95M Serie A (Redpoint), NewLimit USD 435M Serie C (Founders Fund). Patrón: capital concentrado en empresas con producto en producción y revenue verificable.</div>
+        <div class="item-source">Startups.gallery, TechCrunch</div>
+      </div>
+    </div>
+
+    <div class="card radar-card col-8">
+      <div class="section-title">
+        <span class="section-emoji">🎯</span>
+        <span class="section-name">Radar emergente · Datadog</span>
+      </div>
+      <div class="radar-ticker-row">
+        <div class="radar-ticker">DDOG · Datadog</div>
+        <div class="radar-tag">Software · Observabilidad</div>
+      </div>
+      <div class="radar-meta">
+        <span><strong>Mkt cap:</strong> USD 89B</span>
+        <span><strong>P/E fwd:</strong> 85x</span>
+        <span><strong>YTD:</strong> +80%</span>
+      </div>
+      <div class="radar-body">Datadog cruzó USD 1.000M de revenue trimestral por primera vez en Q1 2026, con crecimiento de 32% YoY que acelera por cuarto trimestre consecutivo. La plataforma de observabilidad y seguridad cloud suma 4.550 clientes con ARR +USD 100k (+21% YoY). Obtuvo certificación FedRAMP High abriendo contratos federales sensibles. Lanzó GPU Monitoring, MCP Server para agentes de IA y Bits AI Security Analyst. El CEO destacó tracción en workloads de IA y cloud migration. Guidó Q2 entre USD 1.07-1.08B y año completo USD 4.30-4.34B. La acción subió 42% post-earnings pero retrocedió 7% tras ventas de insiders (CEO y ejecutivos). Cotiza a 15x sales y P/E de 690x (non-GAAP EPS USD 0.60). Analistas ven target promedio en USD 225 (rango USD 250-320). Valoración premium refleja posición en observabilidad de infraestructura IA, pero múltiplos extremos plantean riesgo de corrección si desacelera.</div>
+      <div class="radar-block radar-portfolio">
+        <strong>Conexión con tu portfolio</strong>
+        GOOGL, AMZN y MSFT son clientes ancla de observabilidad cloud. Datadog se beneficia del capex de hiperescalers en IA (similar a VGT). Compite con herramientas propias de cloud providers, pero ofrece visibilidad multi-cloud. Janus Henderson (tu fondo en cartera via Schroder/MFS) lideró Serie B de Ray Therapeutics, señal de apetito en growth de alta calidad.
+      </div>
+      <div class="radar-block radar-watch">
+        <strong>Qué mirar</strong>
+        Aceleración o desaceleración en net new ARR trimestral. Tasa de expansión en clientes existentes (upsell a más productos). Adopción de productos IA (GPU monitoring, security agent). Márgenes: non-GAAP operating margin 22% vs. GAAP 1%. Competencia de Dynatrace, New Relic, y herramientas nativas (CloudWatch, Azure Monitor). Insider selling: normalización post-rally o señal de techo.
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Brief generado el lunes, 8 de junio de 2026 · Respondé al bot con feedback para ajustar.
+  </div>
+
+</div>
+
+</body>
+</html>
