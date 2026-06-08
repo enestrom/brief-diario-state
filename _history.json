@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "date": "2026-05-29",
-      "argentina": [
-        "BCRA aceleró compras y alcanzó casi USD 10.000M en el año"
-      ],
-      "watchlist_news": [],
-      "ia_practica": "Claude Opus 4.8: Fast Mode 2.5x más rápido y 3x más barato",
-      "ia_startups": [
-        "OpenRouter levanta USD 113M Serie B a valuation de USD 1.3B",
-        "Catena Labs cierra USD 30M Serie A para finanzas agénticas",
-        "Q1 2026 rompe récords: USD 300B invertidos, 80% fue IA",
-        "OpenRouter levanta USD 113M Serie B a valuation de USD 1.3B",
-        "Catena Labs cierra USD 30M Serie A para finanzas agénticas",
-        "Q1 2026 rompe récords: USD 300B invertidos, 80% fue IA"
-      ],
-      "radar_ticker": "EQIX",
-      "parapente": "Ozone Vibe GT: nuevo mid-B para XC cotidiano"
-    },
-    {
       "date": "2026-06-01",
       "argentina": [
         "BCRA mantiene racha compradora con USD 7.375M acumulados en 2026"
@@ -115,6 +97,24 @@
         "Q1 2026 batió récords con USD 300B en VC global"
       ],
       "radar_ticker": "APP",
+      "parapente": null
+    },
+    {
+      "date": "2026-06-08",
+      "argentina": [
+        "BCRA superó meta anual en cinco meses"
+      ],
+      "watchlist_news": [],
+      "ia_practica": "Claude Opus 4.8 añade Dynamic Workflows",
+      "ia_startups": [
+        "Q1 2026 rompe todos los récords: USD 300B globales",
+        "Anthropic cerró Serie H récord de USD 65B a valuación de USD 965B",
+        "Generalist AI levanta USD 400M, Suno USD 400M Serie D",
+        "Q1 2026 rompe todos los récords: USD 300B globales",
+        "Anthropic cerró Serie H récord de USD 65B a valuación de USD 965B",
+        "Generalist AI levanta USD 400M, Suno USD 400M Serie D"
+      ],
+      "radar_ticker": "DDOG",
       "parapente": null
     }
   ]
